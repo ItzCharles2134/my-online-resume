@@ -10,9 +10,9 @@ class Education extends BaseController
     public function index()
     {
         $model = new EducationModel();
-        $data['education'] = $model->findAll(); // Fetch all education records
+        $data['education'] = $model->findAll();
 
-        return view('education', $data); // Pass data to the view
+        return view('education', $data);
     }
 }
 
