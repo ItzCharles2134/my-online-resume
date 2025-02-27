@@ -10,9 +10,9 @@ class SoftwareSkills extends Controller
     public function index()
     {
         $model = new SoftwareSkillsModel();
-        $data['software_skills'] = $model->findAll(); // Fetch all skills
+        $data['software_skills'] = $model->findAll();
 
-        return view('softwareskills', $data); // Load the view with data
+        return view('softwareskills', $data);
     }
 }
 
